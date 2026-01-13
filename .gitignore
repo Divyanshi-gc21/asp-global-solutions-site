@@ -1,0 +1,8 @@
+node_modules/
+data.db
+.env
+.vs/
+bin/
+obj/
+.DS_Store
+npm-debug.log
