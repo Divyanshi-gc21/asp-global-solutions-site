@@ -88,33 +88,22 @@
   margin-top: var(--spacing-2xl);
 }
 
-.footer-container {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: var(--spacing-2xl);
-  margin-bottom: var(--spacing-2xl);
+.footer-content {
+  text-align: center;
 }
 
-.footer-section h4 {
+.footer-content .brand {
+  margin-bottom: var(--spacing-lg);
+  color: var(--text-primary);
+  font-size: var(--font-size-xl);
+}
+
+.footer-content p {
+  color: var(--text-secondary);
   margin-bottom: var(--spacing-md);
 }
 
-.footer-section ul {
-  list-style: none;
-}
-
-.footer-section li {
-  margin-bottom: var(--spacing-sm);
-}
-
-.footer-section a {
-  color: var(--text-secondary);
-}
-
-.footer-bottom {
-  padding-top: var(--spacing-lg);
-  border-top: 1px solid var(--border);
-  text-align: center;
+.footer-content p:last-child {
   color: var(--text-tertiary);
   font-size: var(--font-size-sm);
 }

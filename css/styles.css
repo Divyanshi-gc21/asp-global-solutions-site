@@ -125,6 +125,206 @@
   .hero-bg-shapes .shape {
     display: none; /* Hide shapes on mobile for performance */
   }
+
+  /* Hero Section Responsive */
+  .hero-section {
+    padding: 80px 0;
+  }
+
+  .hero-content h1 {
+    font-size: 3rem;
+  }
+
+  .hero-content h5 {
+    font-size: 2.5rem;
+  }
+
+  .hero-content p {
+    font-size: 1.2rem;
+    max-width: 100%;
+  }
+
+  .hero-buttons {
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .hero-buttons .btn {
+    width: 100%;
+    padding: 14px 24px;
+  }
+
+  .hero-stats {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 32px;
+  }
+
+  /* Services Section Responsive */
+  .services-grid {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 32px;
+  }
+
+  .service-card {
+    padding: 32px 24px;
+  }
+
+  /* About Section Responsive */
+  .about-content {
+    grid-template-columns: 1fr;
+    gap: 48px;
+  }
+
+  .about-text h2 {
+    font-size: 2.5rem;
+  }
+
+  .about-text p {
+    font-size: 1.1rem;
+  }
+
+  .about-image div {
+    width: 300px;
+    height: 300px;
+    font-size: 6rem;
+  }
+
+  .about-stats {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+
+  /* CTA Section Responsive */
+  .cta-section {
+    padding: 64px 0;
+  }
+
+  .cta-section h2 {
+    font-size: 2.5rem;
+  }
+
+  .cta-section p {
+    font-size: 1.1rem;
+  }
+
+  .cta-buttons {
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .cta-buttons .btn {
+    width: 100%;
+    padding: 14px 24px;
+  }
+
+  /* Footer Responsive */
+  .footer-content {
+    text-align: center;
+  }
+}
+
+@media (max-width: 480px) {
+  /* Hero Section Mobile */
+  .hero-section {
+    padding: 60px 0;
+  }
+
+  .hero-content h1 {
+    font-size: 2.5rem;
+  }
+
+  .hero-content h5 {
+    font-size: 2rem;
+  }
+
+  .hero-content p {
+    font-size: 1.1rem;
+  }
+
+  .hero-stats {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+
+  .stat-item .stat-number {
+    font-size: 2rem;
+  }
+
+  /* Services Section Mobile */
+  .services-grid {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+
+  .service-card {
+    padding: 24px 20px;
+  }
+
+  .service-icon {
+    width: 70px;
+    height: 70px;
+    font-size: 1.8rem;
+  }
+
+  .service-card h3 {
+    font-size: 1.3rem;
+  }
+
+  /* About Section Mobile */
+  .about-text h2 {
+    font-size: 2rem;
+  }
+
+  .about-text p {
+    font-size: 1rem;
+  }
+
+  .about-image div {
+    width: 250px;
+    height: 250px;
+    font-size: 5rem;
+  }
+
+  .about-stats {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  /* CTA Section Mobile */
+  .cta-section {
+    padding: 48px 0;
+  }
+
+  .cta-section h2 {
+    font-size: 2rem;
+  }
+
+  .cta-section p {
+    font-size: 1rem;
+  }
+
+  /* Navigation Mobile */
+  .header-container {
+    padding: 12px 0;
+  }
+
+  .brand {
+    font-size: 1.2rem;
+  }
+
+  .brand img {
+    height: 40px;
+    width: 40px;
+  }
+
+  /* WhatsApp Float Mobile */
+  .whatsapp-float {
+    right: 20px;
+    bottom: 20px;
+    width: 45px;
+    height: 45px;
+    font-size: 40px;
+  }
 }
 
 /* Utilities */
