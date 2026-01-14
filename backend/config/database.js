@@ -37,7 +37,7 @@ const createTables = async () => {
     )`,
     `CREATE TABLE IF NOT EXISTS posts (
       id INTEGER PRIMARY KEY AUTOINCREMENT,
-      user_id INTEGER NOT NULL,
+      user_id INTEGER,
       title TEXT NOT NULL,
       content TEXT,
       image_url TEXT,

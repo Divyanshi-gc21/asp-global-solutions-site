@@ -93,12 +93,6 @@ ASP Global Solutions/
 
 ## ✨ Key Features
 
-### Authentication
-- User signup & login
-- Secure passwords (bcrypt)
-- JWT tokens (24 hour expiration)
-- Session persistence
-
 ### Posts
 - Create, edit, delete
 - View all posts
@@ -200,9 +194,6 @@ Change these to customize the entire design!
 
 ## 🔐 Security Features
 
-✅ Password hashing (bcryptjs)
-✅ JWT authentication
-✅ Protected API routes
 ✅ CORS configuration
 ✅ Input validation
 ✅ XSS prevention
@@ -239,7 +230,6 @@ From studying this codebase:
 - REST API design
 - Express.js patterns
 - Database design
-- Authentication flows
 - Responsive CSS
 - JavaScript async/await
 - Form validation
@@ -251,7 +241,7 @@ From studying this codebase:
 ## 🚀 Next Steps
 
 1. **Run it** - `npm start`
-2. **Test it** - Create account → Post → Form
+2. **Test it** - Create Post → Submit Form
 3. **Customize it** - Change colors, name, content
 4. **Extend it** - Add more features
 5. **Deploy it** - Use Heroku, AWS, etc.

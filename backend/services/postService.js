@@ -3,14 +3,14 @@ const db = require('../config/database');
 const { AppError } = require('../utils/errors');
 
 class PostService {
-  async createPost(userId, title, content, imageUrl = null) {
+  async createPost(title, content, imageUrl = null) {
     if (!title || title.trim().length === 0) {
       throw new AppError('Title is required', 400);
     }
 
     const result = await db.run(
-      'INSERT INTO posts (user_id, title, content, image_url) VALUES (?, ?, ?, ?)',
-      [userId, title, content || '', imageUrl]
+      'INSERT INTO posts (title, content, image_url) VALUES (?, ?, ?)',
+      [title, content || '', imageUrl]
     );
 
     return this.getPostById(result.id);
@@ -20,7 +20,7 @@ class PostService {
     const post = await db.get(`
       SELECT p.*, u.username, u.firstName, u.lastName, u.profile_picture
       FROM posts p
-      JOIN users u ON p.user_id = u.id
+      LEFT JOIN users u ON p.user_id = u.id
       WHERE p.id = ?
     `, [id]);
 
@@ -35,7 +35,7 @@ class PostService {
     const posts = await db.all(`
       SELECT p.*, u.username, u.firstName, u.lastName, u.profile_picture
       FROM posts p
-      JOIN users u ON p.user_id = u.id
+      LEFT JOIN users u ON p.user_id = u.id
       WHERE p.status = 'published'
       ORDER BY p.created_at DESC
       LIMIT ? OFFSET ?
@@ -64,14 +64,11 @@ class PostService {
     return posts;
   }
 
-  async updatePost(postId, userId, title, content, imageUrl) {
-    const post = await db.get('SELECT user_id FROM posts WHERE id = ?', [postId]);
-    
+  async updatePost(postId, title, content, imageUrl) {
+    const post = await db.get('SELECT id FROM posts WHERE id = ?', [postId]);
+
     if (!post) {
       throw new AppError('Post not found', 404);
-    }
-    if (post.user_id !== userId) {
-      throw new AppError('Not authorized to update this post', 403);
     }
 
     await db.run(
@@ -82,14 +79,11 @@ class PostService {
     return this.getPostById(postId);
   }
 
-  async deletePost(postId, userId) {
-    const post = await db.get('SELECT user_id FROM posts WHERE id = ?', [postId]);
-    
+  async deletePost(postId) {
+    const post = await db.get('SELECT id FROM posts WHERE id = ?', [postId]);
+
     if (!post) {
       throw new AppError('Post not found', 404);
-    }
-    if (post.user_id !== userId) {
-      throw new AppError('Not authorized to delete this post', 403);
     }
 
     await db.run('DELETE FROM posts WHERE id = ?', [postId]);
