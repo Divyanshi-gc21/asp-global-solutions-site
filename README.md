@@ -1,7 +1,7 @@
 # ASP Global Solutions - Production Ready Full-Stack Application
 
 ## Overview
-A modern, professional full-stack web application built with Express.js backend and vanilla JavaScript frontend. Includes user authentication, CRUD operations, form handling, and responsive design.
+A modern, professional full-stack web application built with Express.js backend and vanilla JavaScript frontend. Includes CRUD operations, form handling, and responsive design.
 
 ## Technology Stack
 
@@ -9,8 +9,6 @@ A modern, professional full-stack web application built with Express.js backend 
 - **Runtime**: Node.js
 - **Framework**: Express.js 4.18
 - **Database**: SQLite3
-- **Authentication**: JWT (JSON Web Tokens)
-- **Password Hashing**: bcryptjs
 - **Validation**: Custom validators
 
 ### Frontend
@@ -25,25 +23,21 @@ A modern, professional full-stack web application built with Express.js backend 
 root/
 ├── backend/
 │   ├── controllers/          # Request handlers
-│   │   ├── authController.js
 │   │   ├── postController.js
 │   │   └── formController.js
 │   ├── services/            # Business logic
-│   │   ├── authService.js
 │   │   ├── postService.js
 │   │   └── formService.js
 │   ├── routes/              # API endpoints
-│   │   ├── auth.js
 │   │   ├── posts.js
 │   │   └── forms.js
-│   ├── middleware/          # Authentication & error handling
-│   │   └── auth.js
+│   ├── middleware/          # Error handling
 │   ├── config/              # Configuration
-│   │   ├── database.js
-│   │   └── jwt.js
+│   │   └── database.js
 │   ├── utils/               # Utilities
 │   │   ├── errors.js
 │   │   └── validators.js
+│   ├── models/              # Database models
 │   └── server.js            # Entry point
 
 ├── css/                     # Stylesheets
@@ -55,22 +49,31 @@ root/
 ├── js/                      # Frontend JavaScript
 │   ├── app.js              # Main application logic
 │   ├── api.js              # Centralized API service
-│   └── ui-manager.js       # UI utilities & helpers
+│   ├── ui-manager.js       # UI utilities & helpers
+│   └── pages/              # Page-specific scripts
+│       ├── common.js
+│       ├── contact-page.js
+│       ├── posts-page.js
+│       └── services-page.js
+
+├── assets/                  # Static assets
+│   └── logo.jpeg
 
 ├── index.html              # Main HTML file
+├── about.html              # About page
+├── contact.html            # Contact page
+├── posts.html              # Posts page
+├── services.html           # Services page
 ├── package.json            # Dependencies & scripts
+├── package-lock.json       # Lock file
+├── server.js               # Root server file
+├── bs-config.json          # BrowserSync config
+├── run.bat                 # Windows run script
 ├── .env                    # Environment variables
 └── .gitignore             # Git ignore rules
 ```
 
 ## Features
-
-### ✅ Authentication
-- User registration with validation
-- Secure login with JWT tokens
-- Token refresh and expiration (24 hours)
-- Session persistence using localStorage
-- Profile management
 
 ### ✅ Post Management
 - Create, read, update, delete posts
@@ -86,18 +89,15 @@ root/
 - Email validation
 
 ### ✅ Security
-- Password hashing with bcryptjs
-- JWT-based authentication
 - Input validation & sanitization
 - CORS protection
-- Protected API routes
 
 ### ✅ User Experience
 - Modern, responsive design
 - Loading states & spinners
 - Error handling with user-friendly messages
 - Form validation with field-level feedback
-- Modal dialogs for auth & post creation
+- Modal dialogs for post creation
 - Smooth scrolling & transitions
 
 ### ✅ Frontend
@@ -136,29 +136,10 @@ This will start:
 
 ## API Documentation
 
-### Authentication Endpoints
-
-**POST /api/auth/signup**
-- Create new user account
-- Body: `{ username, email, password, firstName?, lastName? }`
-
-**POST /api/auth/login**
-- User login
-- Body: `{ email, password }`
-- Returns: `{ token, user }`
-
-**GET /api/auth/me**
-- Get current user (protected)
-- Headers: `Authorization: Bearer <token>`
-
-**PUT /api/auth/profile**
-- Update user profile (protected)
-- Body: `{ firstName?, lastName?, bio?, profile_picture? }`
-
 ### Post Endpoints
 
 **POST /api/posts**
-- Create post (protected)
+- Create post
 - Body: `{ title, content?, imageUrl? }`
 
 **GET /api/posts**
@@ -169,10 +150,10 @@ This will start:
 - Get single post
 
 **PUT /api/posts/:id**
-- Update post (protected)
+- Update post
 
 **DELETE /api/posts/:id**
-- Delete post (protected)
+- Delete post
 
 ### Form Endpoints
 
@@ -186,7 +167,6 @@ This will start:
 PORT=5000
 NODE_ENV=development
 CLIENT_URL=http://localhost:3000
-JWT_SECRET=your-super-secret-key
 CORS_ORIGIN=http://localhost:3000
 ```
 
@@ -194,8 +174,6 @@ CORS_ORIGIN=http://localhost:3000
 
 ✅ Clean architecture with separation of concerns
 ✅ Input validation on frontend & backend
-✅ Password hashing with bcryptjs
-✅ JWT authentication with token management
 ✅ CORS configuration for security
 ✅ Comprehensive error handling
 ✅ User-friendly error messages
@@ -207,14 +185,13 @@ CORS_ORIGIN=http://localhost:3000
 
 ## Production Checklist
 
-1. Update `JWT_SECRET` in `.env`
-2. Set `NODE_ENV=production`
-3. Update `CLIENT_URL` and `CORS_ORIGIN`
-4. Enable HTTPS
-5. Set up database backups
-6. Configure rate limiting
-7. Enable compression middleware
-8. Set up monitoring & logging
+1. Set `NODE_ENV=production`
+2. Update `CLIENT_URL` and `CORS_ORIGIN`
+3. Enable HTTPS
+4. Set up database backups
+5. Configure rate limiting
+6. Enable compression middleware
+7. Set up monitoring & logging
 
 ## Development Commands
 
@@ -228,8 +205,7 @@ npm run lint       # Run linter
 
 ## Database Schema
 
-**Users**: id, username, email, password, firstName, lastName, created_at, updated_at
-**Posts**: id, user_id, title, content, image_url, status, created_at, updated_at
+**Posts**: id, title, content, image_url, status, created_at, updated_at
 **Submissions**: id, name, email, subject, message, status, created_at
 
 ## Architecture
@@ -238,7 +214,7 @@ npm run lint       # Run linter
 - **Controllers**: Handle HTTP requests/responses
 - **Services**: Contain business logic
 - **Routes**: Define API endpoints
-- **Middleware**: Authentication & error handling
+- **Middleware**: Error handling
 - **Database**: SQLite with async/promise-based queries
 
 ### Frontend Layer
