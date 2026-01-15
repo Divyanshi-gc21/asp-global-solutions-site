@@ -21,6 +21,9 @@ A modern, professional full-stack web application built with Express.js backend 
 
 ```
 root/
+├── assets/                  # Static assets
+│   └── logo.jpeg
+
 ├── backend/
 │   ├── controllers/          # Request handlers
 │   │   ├── postController.js
@@ -31,7 +34,6 @@ root/
 │   ├── routes/              # API endpoints
 │   │   ├── posts.js
 │   │   └── forms.js
-│   ├── middleware/          # Error handling
 │   ├── config/              # Configuration
 │   │   └── database.js
 │   ├── utils/               # Utilities
@@ -55,9 +57,6 @@ root/
 │       ├── contact-page.js
 │       ├── posts-page.js
 │       └── services-page.js
-
-├── assets/                  # Static assets
-│   └── logo.jpeg
 
 ├── index.html              # Main HTML file
 ├── about.html              # About page

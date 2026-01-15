@@ -14,6 +14,23 @@
   <link rel="stylesheet" href="/css/design-system.css">
   <link rel="stylesheet" href="/css/components.css">
   <link rel="stylesheet" href="/css/layout.css">
+  <style>
+    @media (max-width: 768px) {
+      .about-content {
+        grid-template-columns: 1fr;
+      }
+      .about-text {
+        order: 1;
+      }
+      .about-image {
+        order: 2;
+      }
+      .hero-buttons .btn, .cta-buttons .btn {
+        padding: 12px 20px;
+        font-size: 14px;
+      }
+    }
+  </style>
 </head>
 <body>
   <!-- Header -->
@@ -28,7 +45,7 @@
         <span>☰</span>
       </button>
 
-    <nav class="nav" id="mainNav" style="margin-left: auto;">
+    <nav class="nav" id="mainNav">
       <ul>
         <li><a href="/">Home</a></li>
         <li><a href="/services.html">Services</a></li>
@@ -45,7 +62,7 @@
   <!-- Main Content -->
   <main>
     <!-- Hero Section -->
-    <section class="hero-section" style="background: linear-gradient(135deg, #001122 0%, #003366 50%, #00ffff 100%); color: white; padding: 120px 0; text-align: center; position: relative; overflow: hidden; box-shadow: 0 0 50px rgba(0, 255, 255, 0.3);">
+    <section class="hero-section" style="background: linear-gradient(135deg, #001122 0%, #003366 50%, #00ffff 100%); color: white; padding: 100px 0; text-align: center; position: relative; overflow: hidden; box-shadow: 0 0 50px rgba(0, 255, 255, 0.3);">
       <!-- Animated Background Shapes -->
       <div class="hero-bg-shapes">
         <div class="shape shape-1"></div>
@@ -56,36 +73,36 @@
       </div>
 
       <div class="container">
-        <div class="hero-content" style="max-width: 1200px; margin: 0 auto; text-align: center;">
+        <div class="hero-content" style="max-width: 1200px; margin: 0 auto;  margin-bottom: -70px; text-align: center;">
           
-            <h1 style="font-size: 5rem; margin-bottom: 40px; margin-top: 0; color: white;">ASP Global Solutions</h1>
+            <h1 style="font-size: 3rem; margin-bottom: 40px; margin-top: -60px; color: white;">ASP Global Solutions</h1>
           
 
-          <h5 id="dynamicHeading" style="font-size: clamp(2rem, 5vw, 4rem); font-weight: 800; margin-bottom: 32px; line-height: 1.1; text-shadow: 0 4px 20px rgba(0,0,0,0.3);">
+          <h5 id="dynamicHeading" style="font-size: clamp(1.5rem, 4vw, 3rem); font-weight: 800; margin-bottom: 32px; line-height: 1.1; text-shadow: 0 4px 20px rgba(0,0,0,0.3);">
             Transforming Digital <span style="color: #fbbf24;">Innovation</span> Into Reality
           </h5>
 
-          <p style="font-size: 1.4rem; margin-bottom: 48px; line-height: 1.6; opacity: 0.95; max-width: 700px; margin-left: auto; margin-right: auto; color: white;">
+          <p style="font-size: 1rem; margin-bottom: 48px; line-height: 1.6; opacity: 0.95; max-width: 700px; margin-left: auto; margin-right: auto; color: white;">
             We deliver cutting-edge digital marketing solutions, modern web development, and innovative technology services that drive business growth and digital transformation.
           </p>
 
           <div class="hero-buttons" style="display: flex; gap: 24px; justify-content: center; flex-wrap: wrap; margin-bottom: 64px;">
-            <a href="/services.html" class="btn btn-primary" style="background: rgba(255,255,255,0.2); border: 2px solid white; color: white; padding: 16px 32px; border-radius: 50px; text-decoration: none; font-weight: 600; font-size: 16px; transition: all 0.3s ease; backdrop-filter: blur(10px);">Explore Services</a>
-            <a href="/contact.html" class="btn btn-outline" style="background: transparent; border: 2px solid white; color: white; padding: 16px 32px; border-radius: 50px; text-decoration: none; font-weight: 600; font-size: 16px; transition: all 0.3s ease;">Get Started</a>
+            <a href="/services.html" class="btn btn-primary" style="background: rgba(255,255,255,0.2); border: 2px solid white; color: white; padding: 16px 20px; border-radius: 50px; text-decoration: none; font-weight: 600; font-size: 14px; transition: all 0.3s ease; backdrop-filter: blur(10px);">Explore Services</a>
+            <a href="/contact.html" class="btn btn-outline" style="background: transparent; border: 2px solid white; color: white; padding: 16px 20px; border-radius: 50px; text-decoration: none; font-weight: 600; font-size: 14px; transition: all 0.3s ease;">Get Started</a>
           </div>
 
           <!-- Hero Stats -->
-          <div class="hero-stats" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 40px; max-width: 800px; margin: 0 auto;">
+          <div class="hero-stats" style="display: flex; justify-content: space-around; gap: 20px; max-width: 800px; margin: 0 auto; flex-wrap: wrap;">
             <div class="stat-item" style="text-align: center;">
-              <div class="stat-number" style="font-size: 2.5rem; font-weight: 700; margin-bottom: 8px;">100</div>
+              <div class="stat-number" style="font-size: 2rem; font-weight: 700; margin-bottom: 8px;">100</div>
               <div class="stat-label" style="opacity: 0.9; font-size: 14px;">Projects Completed</div>
             </div>
             <div class="stat-item" style="text-align: center;">
-              <div class="stat-number" style="font-size: 2.5rem; font-weight: 700; margin-bottom: 8px;">50+</div>
+              <div class="stat-number" style="font-size: 2rem; font-weight: 700; margin-bottom: 8px;">50+</div>
               <div class="stat-label" style="opacity: 0.9; font-size: 14px;">Happy Clients</div>
             </div>
             <div class="stat-item" style="text-align: center;">
-              <div class="stat-number" style="font-size: 2.5rem; font-weight: 700; margin-bottom: 8px;">24/7</div>
+              <div class="stat-number" style="font-size: 2rem; font-weight: 700; margin-bottom: 8px;">24/7</div>
               <div class="stat-label" style="opacity: 0.9; font-size: 14px;">Support Available</div>
             </div>
           </div>
@@ -97,44 +114,44 @@
     <section class="section" style="padding: 100px 0; background: #f8fafc;">
       <div class="container">
         <div class="section-header" style="text-align: center; margin-bottom: 80px;">
-          <h2 style="font-size: 3rem; font-weight: 700; margin-bottom: 24px; color: #1e293b;">Our Services</h2>
-          <p style="font-size: 1.2rem; color: #64748b; max-width: 600px; margin: 0 auto; line-height: 1.6;">
+          <h2 style="font-size: 2rem; font-weight: 700; margin-bottom: 24px; color: #1e293b;">Our Services</h2>
+          <p style="font-size: 1rem; color: #64748b; max-width: 600px; margin: 0 auto; line-height: 1.6;">
             Comprehensive digital solutions tailored to elevate your business in the modern marketplace
           </p>
         </div>
 
         <div class="services-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); gap: 40px;">
-          <div class="service-card" style="background: white; padding: 40px 32px; border-radius: 16px; box-shadow: 0 10px 30px rgba(0,0,0,0.1); transition: transform 0.3s ease, box-shadow 0.3s ease; text-align: center;">
+          <div class="service-card" style="background: white; padding: 25px 20px; border-radius: 16px; box-shadow: 0 10px 30px rgba(0,0,0,0.1); transition: transform 0.3s ease, box-shadow 0.3s ease; text-align: center;">
             <div class="service-icon" style="width: 80px; height: 80px; background: linear-gradient(135deg, #001122 0%, #003366 50%, #00ffff 100%); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 24px; font-size: 2rem;">💻</div>
             <h3 style="font-size: 1.5rem; font-weight: 600; margin-bottom: 16px; color: #1e293b;">Web Development</h3>
             <p style="color: #64748b; line-height: 1.6;">Modern, responsive websites and web applications built with cutting-edge technologies and best practices.</p>
           </div>
 
-          <div class="service-card" style="background: white; padding: 40px 32px; border-radius: 16px; box-shadow: 0 10px 30px rgba(0,0,0,0.1); transition: transform 0.3s ease, box-shadow 0.3s ease; text-align: center;">
+          <div class="service-card" style="background: white; padding: 25px 20px; border-radius: 16px; box-shadow: 0 10px 30px rgba(0,0,0,0.1); transition: transform 0.3s ease, box-shadow 0.3s ease; text-align: center;">
             <div class="service-icon" style="width: 80px; height: 80px; background: linear-gradient(135deg, #001122 0%, #003366 50%, #00ffff 100%); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 24px; font-size: 2rem;">📱</div>
             <h3 style="font-size: 1.5rem; font-weight: 600; margin-bottom: 16px; color: #1e293b;">Digital Marketing</h3>
             <p style="color: #64748b; line-height: 1.6;">Strategic marketing campaigns that drive traffic, engagement, and conversions across all digital channels.</p>
           </div>
 
-          <div class="service-card" style="background: white; padding: 40px 32px; border-radius: 16px; box-shadow: 0 10px 30px rgba(0,0,0,0.1); transition: transform 0.3s ease, box-shadow 0.3s ease; text-align: center;">
+          <div class="service-card" style="background: white; padding: 25px 20px; border-radius: 16px; box-shadow: 0 10px 30px rgba(0,0,0,0.1); transition: transform 0.3s ease, box-shadow 0.3s ease; text-align: center;">
             <div class="service-icon" style="width: 80px; height: 80px; background: linear-gradient(135deg, #001122 0%, #003366 50%, #00ffff 100%); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 24px; font-size: 2rem;">🎨</div>
             <h3 style="font-size: 1.5rem; font-weight: 600; margin-bottom: 16px; color: #1e293b;">UI/UX Design</h3>
             <p style="color: #64748b; line-height: 1.6;">Beautiful, intuitive user interfaces that provide exceptional user experiences and drive engagement.</p>
           </div>
 
-          <div class="service-card" style="background: white; padding: 40px 32px; border-radius: 16px; box-shadow: 0 10px 30px rgba(0,0,0,0.1); transition: transform 0.3s ease, box-shadow 0.3s ease; text-align: center;">
+          <div class="service-card" style="background: white; padding: 30px 24px; border-radius: 16px; box-shadow: 0 10px 30px rgba(0,0,0,0.1); transition: transform 0.3s ease, box-shadow 0.3s ease; text-align: center;">
             <div class="service-icon" style="width: 80px; height: 80px; background: linear-gradient(135deg, #001122 0%, #003366 50%, #00ffff 100%); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 24px; font-size: 2rem;">📊</div>
             <h3 style="font-size: 1.5rem; font-weight: 600; margin-bottom: 16px; color: #1e293b;">Analytics & SEO</h3>
             <p style="color: #64748b; line-height: 1.6;">Data-driven insights and search engine optimization strategies to maximize your online visibility.</p>
           </div>
 
-          <div class="service-card" style="background: white; padding: 40px 32px; border-radius: 16px; box-shadow: 0 10px 30px rgba(0,0,0,0.1); transition: transform 0.3s ease, box-shadow 0.3s ease; text-align: center;">
+          <div class="service-card" style="background: white; padding: 30px 24px; border-radius: 16px; box-shadow: 0 10px 30px rgba(0,0,0,0.1); transition: transform 0.3s ease, box-shadow 0.3s ease; text-align: center;">
             <div class="service-icon" style="width: 80px; height: 80px; background: linear-gradient(135deg, #001122 0%, #003366 50%, #00ffff 100%); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 24px; font-size: 2rem;">☁️</div>
             <h3 style="font-size: 1.5rem; font-weight: 600; margin-bottom: 16px; color: #1e293b;">Cloud Solutions</h3>
             <p style="color: #64748b; line-height: 1.6;">Scalable cloud infrastructure and migration services to optimize your business operations.</p>
           </div>
 
-          <div class="service-card" style="background: white; padding: 40px 32px; border-radius: 16px; box-shadow: 0 10px 30px rgba(0,0,0,0.1); transition: transform 0.3s ease, box-shadow 0.3s ease; text-align: center;">
+          <div class="service-card" style="background: white; padding: 30px 24px; border-radius: 16px; box-shadow: 0 10px 30px rgba(0,0,0,0.1); transition: transform 0.3s ease, box-shadow 0.3s ease; text-align: center;">
             <div class="service-icon" style="width: 80px; height: 80px; background: linear-gradient(135deg, #001122 0%, #003366 50%, #00ffff 100%); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 24px; font-size: 2rem;">🔒</div>
             <h3 style="font-size: 1.5rem; font-weight: 600; margin-bottom: 16px; color: #1e293b;">Cybersecurity</h3>
             <p style="color: #64748b; line-height: 1.6;">Comprehensive security solutions to protect your digital assets and ensure business continuity.</p>
@@ -148,30 +165,30 @@
       <div class="container">
         <div class="about-content" style="display: grid; grid-template-columns: 1fr 1fr; gap: 80px; align-items: center;">
           <div class="about-text">
-            <h2 style="font-size: 3rem; font-weight: 700; margin-bottom: 24px; color: #1e293b;">About ASP Global Solutions</h2>
-            <p style="font-size: 1.2rem; color: #64748b; line-height: 1.6; margin-bottom: 24px;">
+            <h2 style="font-size: 2rem; font-weight: 700; margin-bottom: 24px; color: #1e293b;">About ASP Global Solutions</h2>
+            <p style="font-size: 1rem; color: #64748b; line-height: 1.6; margin-bottom: 24px;">
               We are a leading digital innovation company specializing in transforming businesses through cutting-edge technology solutions. With years of experience and a team of expert developers, designers, and strategists, we deliver exceptional results that drive growth and success.
             </p>
-            <p style="font-size: 1.2rem; color: #64748b; line-height: 1.6; margin-bottom: 32px;">
+            <p style="font-size: 1rem; color: #64748b; line-height: 1.6; margin-bottom: 32px;">
               Our mission is to empower businesses with innovative digital solutions that not only meet current needs but also anticipate future challenges in an ever-evolving technological landscape.
             </p>
             <div class="about-stats" style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px;">
               <div class="stat-item">
-                <div class="stat-number" style="font-size: 2rem; font-weight: 700; background: linear-gradient(135deg, #001122 0%, #003366 50%, #00ffff 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">5+</div>
+                <div class="stat-number" style="font-size: 1.5rem; font-weight: 700; background: linear-gradient(135deg, #001122 0%, #003366 50%, #00ffff 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">5+</div>
                 <div class="stat-label" style="color: #64748b; font-size: 14px;">Years Experience</div>
               </div>
               <div class="stat-item">
-                <div class="stat-number" style="font-size: 2rem; font-weight: 700; background: linear-gradient(135deg, #001122 0%, #003366 50%, #00ffff 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">100+</div>
+                <div class="stat-number" style="font-size: 1.5rem; font-weight: 700; background: linear-gradient(135deg, #001122 0%, #003366 50%, #00ffff 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">100+</div>
                 <div class="stat-label" style="color: #64748b; font-size: 14px;">Projects Delivered</div>
               </div>
               <div class="stat-item">
-                <div class="stat-number" style="font-size: 2rem; font-weight: 700; background: linear-gradient(135deg, #001122 0%, #003366 50%, #00ffff 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">50+</div>
+                <div class="stat-number" style="font-size: 1.5rem; font-weight: 700; background: linear-gradient(135deg, #001122 0%, #003366 50%, #00ffff 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">50+</div>
                 <div class="stat-label" style="color: #64748b; font-size: 14px;">Happy Clients</div>
               </div>
             </div>
           </div>
           <div class="about-image" style="text-align: center;">
-            <div style="width: 400px; height: 400px; background: linear-gradient(135deg, #001122 0%, #003366 50%, #00ffff 100%); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto; font-size: 8rem;">🚀</div>
+            <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?w=400&h=300&fit=crop&crop=center" alt="Team Collaboration" style="max-width: 100%; height: auto; border-radius: 16px; box-shadow: 0 10px 30px rgba(0,0,0,0.1); object-fit: cover;">
           </div>
         </div>
       </div>
@@ -180,13 +197,13 @@
     <!-- CTA Section -->
     <section class="cta-section" style="background: linear-gradient(135deg, #001122 0%, #003366 50%, #00ffff 100%); color: white; padding: 80px 0; text-align: center;">
       <div class="container">
-        <h2 style="font-size: 3rem; font-weight: 700; margin-bottom: 24px;">Ready to Transform Your Business?</h2>
-        <p style="font-size: 1.2rem; margin-bottom: 40px; color: white; max-width: 600px; margin-left: auto; margin-right: auto; line-height: 1.6;">
+        <h2 style="font-size: 1.5rem; font-weight: 700; margin-bottom: 24px;">Ready to Transform Your Business?</h2>
+        <p style="font-size: 0.9rem; margin-bottom: 40px; color: white; max-width: 600px; margin-left: auto; margin-right: auto; line-height: 1.6;">
           Let's discuss how we can help you achieve your digital goals and drive sustainable growth for your business.
         </p>
-        <div class="cta-buttons" style="display: flex; gap: 24px; justify-content: center; flex-wrap: wrap;">
-          <a href="/contact.html" class="btn btn-primary" style="background: rgba(255,255,255,0.2); border: 2px solid white; color: white; padding: 16px 32px; border-radius: 50px; text-decoration: none; font-weight: 600; font-size: 16px; transition: all 0.3s ease; backdrop-filter: blur(10px);">Get Free Consultation</a>
-          <a href="/about.html" class="btn btn-outline" style="background: transparent; border: 2px solid white; color: white; padding: 16px 32px; border-radius: 50px; text-decoration: none; font-weight: 600; font-size: 16px; transition: all 0.3s ease;">Learn More About Us</a>
+        <div class="cta-buttons" style="display: flex; gap: 21px; justify-content: center; flex-wrap: wrap;">
+          <a href="/contact.html" class="btn btn-primary" style="background: rgba(255,255,255,0.2); border: 2px solid white; color: white; padding: 16px 25px; border-radius: 50px; text-decoration: none; font-weight: 600; font-size: 14px; transition: all 0.3s ease; backdrop-filter: blur(10px);">Get Free Consultation</a>
+          <a href="/about.html" class="btn btn-outline" style="background: transparent; border: 2px solid white; color: white; padding: 16px 25px; border-radius: 50px; text-decoration: none; font-weight: 600; font-size: 14px; transition: all 0.3s ease;">Learn More About Us</a>
         </div>
       </div>
     </section>
