@@ -90,14 +90,17 @@
 
 /* Contact page footer specific styling */
 .page-contact .site-footer {
-  background-color: rgba(0, 51, 102, 1.0);
+   background-color: var(--bg-tertiary);
+  border-top: 1px solid var(--border);
+  padding: var(--spacing-sm) 0;
+  margin-top: var(--spacing-2xl);
 }
 
 .page-contact .site-footer h3,
 .page-contact .site-footer p,
 .page-contact .site-footer .footer-contact p {
-  color: rgb(197, 192, 192);
-  font-weight: 0;
+  color: var(--text-secondary);
+  font-weight: var(--font-weight-medium);
 }
 
 .footer-content {
