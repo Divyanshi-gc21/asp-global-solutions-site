@@ -14,23 +14,7 @@
   <link rel="stylesheet" href="/css/design-system.css">
   <link rel="stylesheet" href="/css/components.css">
   <link rel="stylesheet" href="/css/layout.css">
-  <style>
-    @media (max-width: 768px) {
-      .about-content {
-        grid-template-columns: 1fr;
-      }
-      .about-text {
-        order: 1;
-      }
-      .about-image {
-        order: 2;
-      }
-      .hero-buttons .btn, .cta-buttons .btn {
-        padding: 12px 20px;
-        font-size: 14px;
-      }
-    }
-  </style>
+
 </head>
 <body>
   <!-- Header -->
@@ -86,10 +70,7 @@
             We deliver cutting-edge digital marketing solutions, modern web development, and innovative technology services that drive business growth and digital transformation.
           </p>
 
-          <div class="hero-buttons" style="display: flex; gap: 24px; justify-content: center; flex-wrap: wrap; margin-bottom: 64px;">
-            <a href="/services.html" class="btn btn-primary" style="background: rgba(255,255,255,0.2); border: 2px solid white; color: white; padding: 16px 20px; border-radius: 50px; text-decoration: none; font-weight: 600; font-size: 14px; transition: all 0.3s ease; backdrop-filter: blur(10px);">Explore Services</a>
-            <a href="/contact.html" class="btn btn-outline" style="background: transparent; border: 2px solid white; color: white; padding: 16px 20px; border-radius: 50px; text-decoration: none; font-weight: 600; font-size: 14px; transition: all 0.3s ease;">Get Started</a>
-          </div>
+
 
           <!-- Hero Stats -->
           <div class="hero-stats" style="display: flex; justify-content: space-around; gap: 20px; max-width: 800px; margin: 0 auto; flex-wrap: wrap;">
@@ -121,39 +102,33 @@
         </div>
 
         <div class="services-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); gap: 40px;">
-          <div class="service-card" style="background: white; padding: 25px 20px; border-radius: 16px; box-shadow: 0 10px 30px rgba(0,0,0,0.1); transition: transform 0.3s ease, box-shadow 0.3s ease; text-align: center;">
-            <div class="service-icon" style="width: 80px; height: 80px; background: linear-gradient(135deg, #001122 0%, #003366 50%, #00ffff 100%); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 24px; font-size: 2rem;">💻</div>
-            <h3 style="font-size: 1.5rem; font-weight: 600; margin-bottom: 16px; color: #1e293b;">Web Development</h3>
+            <div class="service-card" style="background: white; padding: 20px 16px; border-radius: 16px; box-shadow: 0 10px 30px rgba(0,0,0,0.1); text-align: center; transition: all 0.3s ease; border: 2px solid transparent;" onmouseover="this.style.border='2px solid transparent'; this.style.background='linear-gradient(white, white) padding-box, linear-gradient(135deg, #001122 0%, #003366 50%, #00ffff 100%) border-box'; this.style.transform='translateY(-5px)'; this.style.boxShadow='0 20px 40px rgba(0,0,0,0.15)';" onmouseout="this.style.border='2px solid transparent'; this.style.background='white'; this.style.transform='translateY(0)'; this.style.boxShadow='0 10px 30px rgba(0,0,0,0.1)';">
+            <h3 style="font-size: 1.2rem; font-weight: 600; margin-bottom: 16px; color: #1e293b;">Web Development</h3>
             <p style="color: #64748b; line-height: 1.6;">Modern, responsive websites and web applications built with cutting-edge technologies and best practices.</p>
           </div>
 
-          <div class="service-card" style="background: white; padding: 25px 20px; border-radius: 16px; box-shadow: 0 10px 30px rgba(0,0,0,0.1); transition: transform 0.3s ease, box-shadow 0.3s ease; text-align: center;">
-            <div class="service-icon" style="width: 80px; height: 80px; background: linear-gradient(135deg, #001122 0%, #003366 50%, #00ffff 100%); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 24px; font-size: 2rem;">📱</div>
-            <h3 style="font-size: 1.5rem; font-weight: 600; margin-bottom: 16px; color: #1e293b;">Digital Marketing</h3>
+            <div class="service-card" style="background: white; padding: 20px 16px; border-radius: 16px; box-shadow: 0 10px 30px rgba(0,0,0,0.1); text-align: center; transition: all 0.3s ease; border: 2px solid transparent;" onmouseover="this.style.border='2px solid transparent'; this.style.background='linear-gradient(white, white) padding-box, linear-gradient(135deg, #001122 0%, #003366 50%, #00ffff 100%) border-box'; this.style.transform='translateY(-5px)'; this.style.boxShadow='0 20px 40px rgba(0,0,0,0.15)';" onmouseout="this.style.border='2px solid transparent'; this.style.background='white'; this.style.transform='translateY(0)'; this.style.boxShadow='0 10px 30px rgba(0,0,0,0.1)';">
+            <h3 style="font-size: 1.2rem; font-weight: 600; margin-bottom: 16px; color: #1e293b;">Digital Marketing</h3>
             <p style="color: #64748b; line-height: 1.6;">Strategic marketing campaigns that drive traffic, engagement, and conversions across all digital channels.</p>
           </div>
 
-          <div class="service-card" style="background: white; padding: 25px 20px; border-radius: 16px; box-shadow: 0 10px 30px rgba(0,0,0,0.1); transition: transform 0.3s ease, box-shadow 0.3s ease; text-align: center;">
-            <div class="service-icon" style="width: 80px; height: 80px; background: linear-gradient(135deg, #001122 0%, #003366 50%, #00ffff 100%); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 24px; font-size: 2rem;">🎨</div>
-            <h3 style="font-size: 1.5rem; font-weight: 600; margin-bottom: 16px; color: #1e293b;">UI/UX Design</h3>
+            <div class="service-card" style="background: white; padding: 20px 16px; border-radius: 16px; box-shadow: 0 10px 30px rgba(0,0,0,0.1); text-align: center; transition: all 0.3s ease; border: 2px solid transparent;" onmouseover="this.style.border='2px solid transparent'; this.style.background='linear-gradient(white, white) padding-box, linear-gradient(135deg, #001122 0%, #003366 50%, #00ffff 100%) border-box'; this.style.transform='translateY(-5px)'; this.style.boxShadow='0 20px 40px rgba(0,0,0,0.15)';" onmouseout="this.style.border='2px solid transparent'; this.style.background='white'; this.style.transform='translateY(0)'; this.style.boxShadow='0 10px 30px rgba(0,0,0,0.1)';">
+            <h3 style="font-size: 1.2rem; font-weight: 600; margin-bottom: 16px; color: #1e293b;">UI/UX Design</h3>
             <p style="color: #64748b; line-height: 1.6;">Beautiful, intuitive user interfaces that provide exceptional user experiences and drive engagement.</p>
           </div>
 
-          <div class="service-card" style="background: white; padding: 30px 24px; border-radius: 16px; box-shadow: 0 10px 30px rgba(0,0,0,0.1); transition: transform 0.3s ease, box-shadow 0.3s ease; text-align: center;">
-            <div class="service-icon" style="width: 80px; height: 80px; background: linear-gradient(135deg, #001122 0%, #003366 50%, #00ffff 100%); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 24px; font-size: 2rem;">📊</div>
-            <h3 style="font-size: 1.5rem; font-weight: 600; margin-bottom: 16px; color: #1e293b;">Analytics & SEO</h3>
+            <div class="service-card" style="background: white; padding: 20px 16px; border-radius: 16px; box-shadow: 0 10px 30px rgba(0,0,0,0.1); text-align: center; transition: all 0.3s ease; border: 2px solid transparent;" onmouseover="this.style.border='2px solid transparent'; this.style.background='linear-gradient(white, white) padding-box, linear-gradient(135deg, #001122 0%, #003366 50%, #00ffff 100%) border-box'; this.style.transform='translateY(-5px)'; this.style.boxShadow='0 20px 40px rgba(0,0,0,0.15)';" onmouseout="this.style.border='2px solid transparent'; this.style.background='white'; this.style.transform='translateY(0)'; this.style.boxShadow='0 10px 30px rgba(0,0,0,0.1)';">
+            <h3 style="font-size: 1.2rem; font-weight: 600; margin-bottom: 16px; color: #1e293b;">Analytics & SEO</h3>
             <p style="color: #64748b; line-height: 1.6;">Data-driven insights and search engine optimization strategies to maximize your online visibility.</p>
           </div>
 
-          <div class="service-card" style="background: white; padding: 30px 24px; border-radius: 16px; box-shadow: 0 10px 30px rgba(0,0,0,0.1); transition: transform 0.3s ease, box-shadow 0.3s ease; text-align: center;">
-            <div class="service-icon" style="width: 80px; height: 80px; background: linear-gradient(135deg, #001122 0%, #003366 50%, #00ffff 100%); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 24px; font-size: 2rem;">☁️</div>
-            <h3 style="font-size: 1.5rem; font-weight: 600; margin-bottom: 16px; color: #1e293b;">Cloud Solutions</h3>
+            <div class="service-card" style="background: white; padding: 20px 16px; border-radius: 16px; box-shadow: 0 10px 30px rgba(0,0,0,0.1); text-align: center; transition: all 0.3s ease; border: 2px solid transparent;" onmouseover="this.style.border='2px solid transparent'; this.style.background='linear-gradient(white, white) padding-box, linear-gradient(135deg, #001122 0%, #003366 50%, #00ffff 100%) border-box'; this.style.transform='translateY(-5px)'; this.style.boxShadow='0 20px 40px rgba(0,0,0,0.15)';" onmouseout="this.style.border='2px solid transparent'; this.style.background='white'; this.style.transform='translateY(0)'; this.style.boxShadow='0 10px 30px rgba(0,0,0,0.1)';">
+            <h3 style="font-size: 1.2rem; font-weight: 600; margin-bottom: 16px; color: #1e293b;">Cloud Solutions</h3>
             <p style="color: #64748b; line-height: 1.6;">Scalable cloud infrastructure and migration services to optimize your business operations.</p>
           </div>
 
-          <div class="service-card" style="background: white; padding: 30px 24px; border-radius: 16px; box-shadow: 0 10px 30px rgba(0,0,0,0.1); transition: transform 0.3s ease, box-shadow 0.3s ease; text-align: center;">
-            <div class="service-icon" style="width: 80px; height: 80px; background: linear-gradient(135deg, #001122 0%, #003366 50%, #00ffff 100%); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 24px; font-size: 2rem;">🔒</div>
-            <h3 style="font-size: 1.5rem; font-weight: 600; margin-bottom: 16px; color: #1e293b;">Cybersecurity</h3>
+            <div class="service-card" style="background: white; padding: 20px 16px; border-radius: 16px; box-shadow: 0 10px 30px rgba(0,0,0,0.1); text-align: center; transition: all 0.3s ease; border: 2px solid transparent;" onmouseover="this.style.border='2px solid transparent'; this.style.background='linear-gradient(white, white) padding-box, linear-gradient(135deg, #001122 0%, #003366 50%, #00ffff 100%) border-box'; this.style.transform='translateY(-5px)'; this.style.boxShadow='0 20px 40px rgba(0,0,0,0.15)';" onmouseout="this.style.border='2px solid transparent'; this.style.background='white'; this.style.transform='translateY(0)'; this.style.boxShadow='0 10px 30px rgba(0,0,0,0.1)';">
+            <h3 style="font-size: 1.2rem; font-weight: 600; margin-bottom: 16px; color: #1e293b;">Cybersecurity</h3>
             <p style="color: #64748b; line-height: 1.6;">Comprehensive security solutions to protect your digital assets and ensure business continuity.</p>
           </div>
         </div>
@@ -163,7 +138,7 @@
     <!-- About Section -->
     <section class="section" style="padding: 100px 0;">
       <div class="container">
-        <div class="about-content" style="display: grid; grid-template-columns: 1fr 1fr; gap: 80px; align-items: center;">
+        <div class="about-content">
           <div class="about-text">
             <h2 style="font-size: 2rem; font-weight: 700; margin-bottom: 24px; color: #1e293b;">About ASP Global Solutions</h2>
             <p style="font-size: 1rem; color: #64748b; line-height: 1.6; margin-bottom: 24px;">
@@ -187,7 +162,7 @@
               </div>
             </div>
           </div>
-          <div class="about-image" style="text-align: center;">
+          <div class="about-image">
             <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?w=400&h=300&fit=crop&crop=center" alt="Team Collaboration" style="max-width: 100%; height: auto; border-radius: 16px; box-shadow: 0 10px 30px rgba(0,0,0,0.1); object-fit: cover;">
           </div>
         </div>
@@ -195,7 +170,7 @@
     </section>
 
     <!-- CTA Section -->
-    <section class="cta-section" style="background: linear-gradient(135deg, #001122 0%, #003366 50%, #00ffff 100%); color: white; padding: 80px 0; text-align: center;">
+    <section class="cta-section" style="background: linear-gradient(135deg, #001122 0%, #003366 50%, #00ffff 100%); color: white; padding: 60px 40px; border-radius: 16px; text-align: center; box-shadow: 0 20px 40px rgba(0,0,0,0.1); max-width:1000px; margin: 0 auto;">
       <div class="container">
         <h2 style="font-size: 1.5rem; font-weight: 700; margin-bottom: 24px;">Ready to Transform Your Business?</h2>
         <p style="font-size: 0.9rem; margin-bottom: 40px; color: white; max-width: 600px; margin-left: auto; margin-right: auto; line-height: 1.6;">
@@ -209,21 +184,7 @@
     </section>
   </main>
 
-  <!-- Footer -->
-  <footer class="site-footer" style="background-color: var(--bg-tertiary); border-top: 1px solid var(--border); padding: var(--spacing-2xl) 0;">
-    <div class="container">
-      <div class="footer-content" style="text-align: center;">
-        <div style="margin-bottom: var(--spacing-lg);">
-          <a href="/" class="brand" style="color: var(--text-primary); font-size: var(--font-size-xl);">
-            <span>🌐</span>
-            <span>ASP Global Solutions</span>
-          </a>
-        </div>
-        <p style="color: var(--text-secondary); margin-bottom: var(--spacing-md);">&copy; <span id="year"></span> ASP Global Solutions. All rights reserved.</p>
-        <p style="color: var(--text-tertiary); font-size: var(--font-size-sm);">Building connections, fostering growth, and empowering digital communities.</p>
-      </div>
-    </div>
-  </footer>
+
 
 
   <!-- Logo Modal -->
@@ -332,6 +293,16 @@
     });
   </script>
   
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container footer-container">
+      <div class="footer-content">
+        <p>&copy; <span id="year"></span> ASP Global Solutions. All rights reserved.</p>
+        <p>Connecting people, sharing stories.</p>
+      </div>
+    </div>
+  </footer>
+
   
   <a href="https://wa.me/918707491302" target="_blank" class="whatsapp-float">
   <i class="fab fa-whatsapp"></i>

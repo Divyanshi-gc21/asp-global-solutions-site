@@ -14,12 +14,6 @@ class PostsPage {
   }
 
   setupEventListeners() {
-    // Navigation toggle
-    const navToggle = document.getElementById('navToggle');
-    if (navToggle) {
-      navToggle.addEventListener('click', () => this.toggleNav());
-    }
-
     // Post buttons
     // Post form listener (inline form)
     const postForm = document.getElementById('postForm');
@@ -37,11 +31,6 @@ class PostsPage {
       const postForm = document.getElementById('postForm');
       if (postForm) postForm.reset();
     });
-  }
-
-  toggleNav() {
-    const nav = document.getElementById('mainNav');
-    if (nav) nav.classList.toggle('open');
   }
 
 

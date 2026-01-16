@@ -5,7 +5,6 @@ class ServicesPage {
       {
         id: 'sem-ppc',
         title: 'Search Engine Marketing (SEM / PPC)',
-        icon: '📢',
         shortDesc: 'Pay-per-click advertising campaigns that drive targeted traffic and maximize your ROI across search engines.',
         detailedDesc: 'Maximize your online visibility and drive qualified traffic with our expert SEM and PPC campaigns. We create targeted advertising strategies that deliver measurable results.',
         features: [
@@ -30,7 +29,6 @@ class ServicesPage {
       {
         id: 'seo',
         title: 'Search Engine Optimization (SEO)',
-        icon: '🔍',
         shortDesc: 'Improve your website\'s visibility and ranking on search engines through strategic optimization techniques.',
         detailedDesc: 'Boost your organic search rankings and drive sustainable traffic with our comprehensive SEO services. We use data-driven strategies to improve your website\'s visibility.',
         features: [
@@ -56,7 +54,6 @@ class ServicesPage {
       {
         id: 'smo-smm',
         title: 'Social Media Optimization & Marketing (SMO / SMM)',
-        icon: '📱',
         shortDesc: 'Build brand awareness and engage with your audience across all major social media platforms.',
         detailedDesc: 'Grow your social media presence and engage with your target audience effectively. Our SMO and SMM strategies help you build brand loyalty and drive conversions.',
         features: [
@@ -82,7 +79,6 @@ class ServicesPage {
       {
         id: 'web-development',
         title: 'Web Development',
-        icon: '💻',
         shortDesc: 'Custom website development, responsive design, and modern web applications built with cutting-edge technologies.',
         detailedDesc: 'Transform your online presence with our comprehensive web development services. We create custom websites and web applications that are not only visually stunning but also highly functional and user-friendly.',
         features: [
@@ -107,7 +103,6 @@ class ServicesPage {
       {
         id: 'mobile-app',
         title: 'Mobile App Development',
-        icon: '📱',
         shortDesc: 'Native and cross-platform mobile applications for iOS and Android with intuitive user experiences.',
         detailedDesc: 'Reach your customers wherever they are with our mobile app development services. We create native and cross-platform applications that deliver exceptional user experiences.',
         features: [
@@ -132,7 +127,6 @@ class ServicesPage {
       {
         id: 'ui-ux-design',
         title: 'UI/UX Design',
-        icon: '🎨',
         shortDesc: 'User-centered design solutions with beautiful interfaces and exceptional user experiences.',
         detailedDesc: 'Create memorable user experiences with our UI/UX design services. We focus on understanding user behavior and designing interfaces that are both beautiful and functional.',
         features: [
@@ -157,7 +151,6 @@ class ServicesPage {
       {
         id: 'ppc-google-ads',
         title: 'Pay-Per-Click (PPC) Campaigns & Google Ads',
-        icon: '🎯',
         shortDesc: 'Strategic PPC campaigns and Google Ads management to drive qualified traffic and conversions.',
         detailedDesc: 'Maximize your advertising ROI with our PPC campaign management and Google Ads expertise. We create targeted campaigns that drive qualified traffic and increase conversions.',
         features: [
@@ -183,7 +176,6 @@ class ServicesPage {
       {
         id: 'ai-calling-agent',
         title: 'AI Calling Agent Solutions',
-        icon: '🤖',
         shortDesc: 'Intelligent AI-powered calling solutions for automated customer engagement and lead generation.',
         detailedDesc: 'Automate your customer outreach with our AI calling agent solutions. Our advanced AI technology enables personalized, intelligent conversations that engage customers and generate leads effectively.',
         features: [
@@ -208,7 +200,6 @@ class ServicesPage {
       {
         id: 'ai-chatbots',
         title: 'AI Chatbots (WhatsApp, Telegram, Website)',
-        icon: '💬',
         shortDesc: 'Intelligent chatbot solutions for WhatsApp, Telegram, and websites to enhance customer interactions.',
         detailedDesc: 'Enhance customer engagement with our AI-powered chatbots. Available on WhatsApp, Telegram, and your website, our chatbots provide instant responses and personalized interactions.',
         features: [
@@ -233,7 +224,6 @@ class ServicesPage {
       {
         id: 'email-marketing',
         title: 'Email Marketing & Automation',
-        icon: '📧',
         shortDesc: 'Strategic email campaigns and automation to nurture leads and drive customer engagement.',
         detailedDesc: 'Drive customer engagement and conversions with our email marketing and automation services. We create targeted campaigns and automated workflows that nurture leads and build customer relationships.',
         features: [
@@ -258,7 +248,6 @@ class ServicesPage {
       {
         id: 'content-marketing',
         title: 'Content Marketing',
-        icon: '✍️',
         shortDesc: 'Create valuable, engaging content that attracts and retains your target audience.',
         detailedDesc: 'Establish thought leadership and attract your target audience with our content marketing services. We create high-quality, engaging content that drives traffic and builds brand authority.',
         features: [
@@ -281,34 +270,8 @@ class ServicesPage {
         ]
       },
       {
-        id: 'copywriting',
-        title: 'Copywriting Services',
-        icon: '📝',
-        shortDesc: 'Professional copywriting services to craft compelling messages that convert visitors into customers.',
-        detailedDesc: 'Convert more visitors into customers with our professional copywriting services. We craft compelling, persuasive copy that resonates with your audience and drives action.',
-        features: [
-          'Website copy',
-          'Landing page copy',
-          'Email copy',
-          'Ad copy',
-          'Social media copy',
-          'Brand messaging',
-          'SEO copywriting'
-        ],
-        technologies: ['Google Docs', 'Grammarly', 'Hemingway', 'Copy.ai', 'Jasper', 'SurferSEO'],
-        process: [
-          'Research and analysis',
-          'Copy strategy',
-          'Drafting',
-          'Editing and revision',
-          'Client feedback',
-          'Final delivery'
-        ]
-      },
-      {
         id: 'graphics-brand-identity',
         title: 'Graphics & Brand Identity Designing',
-        icon: '🎨',
         shortDesc: 'Professional graphic design and brand identity solutions to create a memorable visual presence.',
         detailedDesc: 'Establish a strong visual identity with our comprehensive graphic design and branding services. We create cohesive brand experiences that resonate with your target audience and build brand recognition.',
         features: [
@@ -334,7 +297,6 @@ class ServicesPage {
       {
         id: 'video-marketing',
         title: 'Video Marketing',
-        icon: '🎬',
         shortDesc: 'Engaging video content creation and marketing strategies to captivate your audience and drive engagement.',
         detailedDesc: 'Tell your story through compelling video content with our video marketing services. From promotional videos to social media content, we create videos that engage viewers and drive results.',
         features: [
@@ -359,7 +321,6 @@ class ServicesPage {
       {
         id: 'creative-ad-production',
         title: 'Creative Ad Production',
-        icon: '📺',
         shortDesc: 'Innovative advertising campaigns and creative production to capture attention and drive conversions.',
         detailedDesc: 'Create impactful advertising campaigns with our creative ad production services. We develop innovative concepts and produce high-quality ads that cut through the noise and deliver measurable results.',
         features: [
@@ -384,7 +345,6 @@ class ServicesPage {
       {
         id: 'orm',
         title: 'Online Reputation Management (ORM)',
-        icon: '🛡️',
         shortDesc: 'Comprehensive online reputation management to protect and enhance your brand\'s digital presence.',
         detailedDesc: 'Protect and enhance your brand\'s online reputation with our comprehensive ORM services. We monitor, manage, and improve how your business is perceived across digital channels.',
         features: [
@@ -409,7 +369,6 @@ class ServicesPage {
       {
         id: 'crm-integration',
         title: 'CRM Integration',
-        icon: '🔗',
         shortDesc: 'Seamless CRM system integration and customization to streamline customer relationship management.',
         detailedDesc: 'Optimize your customer relationship management with our CRM integration services. We integrate and customize CRM systems to streamline your sales, marketing, and customer service processes.',
         features: [
@@ -435,7 +394,6 @@ class ServicesPage {
       {
         id: 'marketing-analytics',
         title: 'Marketing Analytics & Reporting',
-        icon: '📊',
         shortDesc: 'Data-driven marketing insights and comprehensive reporting to optimize campaign performance.',
         detailedDesc: 'Make data-driven decisions with our marketing analytics and reporting services. We provide comprehensive insights and actionable reports to optimize your marketing campaigns and maximize ROI.',
         features: [
@@ -461,7 +419,6 @@ class ServicesPage {
       {
         id: 'performance-marketing',
         title: 'Performance Marketing',
-        icon: '📈',
         shortDesc: 'Data-driven performance marketing strategies to achieve measurable results and optimize campaign efficiency.',
         detailedDesc: 'Drive measurable results with our performance marketing strategies. We focus on data-driven approaches to optimize campaigns and maximize ROI across all marketing channels.',
         features: [
@@ -486,7 +443,6 @@ class ServicesPage {
       {
         id: 'brand-strategy',
         title: 'Brand Strategy & Positioning',
-        icon: '🏷️',
         shortDesc: 'Comprehensive brand strategy development to establish strong positioning and market differentiation.',
         detailedDesc: 'Build a strong brand identity that resonates with your target audience. Our brand strategy services help you establish clear positioning and create meaningful connections with customers.',
         features: [
@@ -512,7 +468,6 @@ class ServicesPage {
       {
         id: 'market-research',
         title: 'Market Research & Competitor Analysis',
-        icon: '📊',
         shortDesc: 'In-depth market research and competitor analysis to inform strategic business decisions and identify opportunities.',
         detailedDesc: 'Make informed business decisions with comprehensive market research and competitor analysis. We provide actionable insights to help you understand market trends and competitive landscape.',
         features: [
@@ -538,7 +493,6 @@ class ServicesPage {
       {
         id: 'conversion-rate-optimization',
         title: 'Conversion Rate Optimization (CRO)',
-        icon: '⚡',
         shortDesc: 'Data-driven CRO strategies to improve website conversions and maximize business results.',
         detailedDesc: 'Optimize your website\'s conversion rate with our comprehensive CRO services. We use data-driven strategies and A/B testing to improve user experience and increase conversions.',
         features: [
@@ -563,7 +517,6 @@ class ServicesPage {
       {
         id: 'website-traffic-growth',
         title: 'Website Traffic Growth Strategies',
-        icon: '📈',
         shortDesc: 'Comprehensive strategies to increase website traffic and improve online visibility.',
         detailedDesc: 'Grow your website traffic with our comprehensive strategies. We combine SEO, content marketing, and paid advertising to drive sustainable traffic growth.',
         features: [
@@ -588,7 +541,6 @@ class ServicesPage {
       {
         id: 'lead-nurturing',
         title: 'Lead Nurturing Campaigns',
-        icon: '🌱',
         shortDesc: 'Strategic lead nurturing campaigns to convert prospects into loyal customers.',
         detailedDesc: 'Nurture your leads through the sales funnel with our strategic lead nurturing campaigns. We create personalized experiences that guide prospects toward conversion.',
         features: [
@@ -613,7 +565,6 @@ class ServicesPage {
       {
         id: 'bulk-lead-generation',
         title: 'Bulk Lead Generation Services',
-        icon: '🎯',
         shortDesc: 'High-volume lead generation services to fuel your sales pipeline with qualified prospects.',
         detailedDesc: 'Scale your business with our bulk lead generation services. We use multiple channels and strategies to generate high-quality leads at scale.',
         features: [
@@ -639,7 +590,6 @@ class ServicesPage {
       {
         id: 'marketing-automation',
         title: 'Marketing Automation Solutions',
-        icon: '⚙️',
         shortDesc: 'Advanced marketing automation solutions to streamline and optimize marketing workflows.',
         detailedDesc: 'Automate your marketing processes with our comprehensive marketing automation solutions. Streamline workflows, personalize communications, and scale your marketing efforts.',
         features: [
@@ -665,7 +615,6 @@ class ServicesPage {
       {
         id: 'customer-retargeting',
         title: 'Customer Retargeting Campaigns',
-        icon: '🔄',
         shortDesc: 'Strategic retargeting campaigns to re-engage previous visitors and convert them into customers.',
         detailedDesc: 'Re-engage your website visitors with our strategic retargeting campaigns. We use display advertising and email marketing to bring back lost prospects and increase conversions.',
         features: [
@@ -691,7 +640,6 @@ class ServicesPage {
       {
         id: 'app-marketing-aso',
         title: 'App Marketing (ASO)',
-        icon: '📱',
         shortDesc: 'App Store Optimization services to increase app visibility and downloads.',
         detailedDesc: 'Optimize your mobile app\'s visibility in app stores with our comprehensive ASO services. We improve rankings, increase downloads, and boost user acquisition.',
         features: [
@@ -717,7 +665,6 @@ class ServicesPage {
       {
         id: 'ecommerce-marketing',
         title: 'E-commerce Marketing',
-        icon: '🛒',
         shortDesc: 'Comprehensive e-commerce marketing strategies to boost online sales and customer engagement.',
         detailedDesc: 'Drive e-commerce success with our comprehensive marketing strategies. We optimize product listings, run targeted campaigns, and improve conversion rates to maximize online sales.',
         features: [
@@ -743,7 +690,6 @@ class ServicesPage {
       {
         id: 'local-business-marketing',
         title: 'Local Business Marketing',
-        icon: '🏢',
         shortDesc: 'Localized marketing strategies to help businesses dominate their local markets.',
         detailedDesc: 'Dominate your local market with our comprehensive local business marketing strategies. We combine local SEO, Google My Business optimization, and community engagement to drive local customers.',
         features: [
@@ -769,7 +715,6 @@ class ServicesPage {
       {
         id: 'ai-powered-marketing',
         title: 'AI-Powered Marketing Solutions',
-        icon: '🤖',
         shortDesc: 'Intelligent AI-driven marketing strategies to optimize campaigns and maximize ROI.',
         detailedDesc: 'Leverage the power of AI to optimize your marketing campaigns. Our AI-powered solutions provide predictive analytics, automated optimization, and personalized marketing at scale.',
         features: [
@@ -795,7 +740,6 @@ class ServicesPage {
       {
         id: 'chatbot-marketing-automation',
         title: 'Chatbot Marketing Automation',
-        icon: '💬',
         shortDesc: 'Intelligent chatbot systems for automated marketing interactions and lead generation.',
         detailedDesc: 'Automate your marketing interactions with intelligent chatbot systems. Our chatbots engage visitors, qualify leads, and nurture prospects across multiple channels.',
         features: [
@@ -821,7 +765,6 @@ class ServicesPage {
       {
         id: 'whatsapp-business-api',
         title: 'WhatsApp Business API Integration',
-        icon: '📱',
         shortDesc: 'Seamless WhatsApp Business API integration for enhanced customer communication and marketing.',
         detailedDesc: 'Integrate WhatsApp Business API to enhance customer communication and marketing efforts. Send automated messages, process orders, and provide personalized customer support.',
         features: [
@@ -847,7 +790,6 @@ class ServicesPage {
       {
         id: 'digital-marketing',
         title: 'Digital Marketing',
-        icon: '📱',
         shortDesc: 'Strategic marketing campaigns that drive traffic, engagement, and conversions across all digital channels.',
         detailedDesc: 'Grow your online presence with our comprehensive digital marketing services. We create data-driven strategies that drive traffic, increase engagement, and boost conversions across all digital channels.',
         features: [
@@ -872,7 +814,6 @@ class ServicesPage {
       {
         id: 'analytics-seo',
         title: 'Analytics & SEO',
-        icon: '📊',
         shortDesc: 'Data-driven insights and search engine optimization strategies to maximize your online visibility.',
         detailedDesc: 'Make data-driven decisions and improve your search rankings with our analytics and SEO services. We provide comprehensive insights and implement proven optimization strategies.',
         features: [
@@ -897,7 +838,6 @@ class ServicesPage {
       {
         id: 'cloud-solutions',
         title: 'Cloud Solutions',
-        icon: '☁️',
         shortDesc: 'Scalable cloud infrastructure and migration services to optimize your business operations.',
         detailedDesc: 'Transform your business with scalable cloud solutions. We help you migrate to the cloud, optimize infrastructure, and leverage cloud technologies for better performance and cost efficiency.',
         features: [
@@ -922,7 +862,6 @@ class ServicesPage {
       {
         id: 'cybersecurity',
         title: 'Cybersecurity',
-        icon: '🔒',
         shortDesc: 'Comprehensive security solutions to protect your digital assets and ensure business continuity.',
         detailedDesc: 'Protect your business from cyber threats with our comprehensive cybersecurity solutions. We implement advanced security measures to safeguard your data and ensure business continuity.',
         features: [
@@ -991,29 +930,24 @@ class ServicesPage {
     // Create modal HTML
     const modalHTML = `
       <div class="service-modal-overlay" style="position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.8); z-index: 1000; display: flex; align-items: center; justify-content: center; padding: 20px;">
-        <div class="service-modal" style="background: white; border-radius: 16px; max-width: 800px; width: 100%; max-height: 90vh; overflow-y: auto; position: relative; box-shadow: 0 20px 60px rgba(0,0,0,0.3);">
+        <div class="service-modal" style="background: white; border-radius: 16px; max-width: 600px; width: 100%; max-height: 90vh; overflow-y: auto; position: relative; box-shadow: 0 20px 60px rgba(0,0,0,0.3);">
           <button class="service-modal-close" style="position: absolute; top: 20px; right: 20px; background: none; border: none; font-size: 24px; cursor: pointer; z-index: 1001; color: #6b7280;">✕</button>
 
           <div class="service-modal-header" style="padding: 40px 40px 20px; border-bottom: 1px solid #e5e7eb;">
-            <div style="display: flex; align-items: center; gap: 20px; margin-bottom: 20px;">
-              <div class="service-modal-icon" style="width: 80px; height: 80px; background: linear-gradient(135deg, #001122 0%, #003366 50%, #00ffff 100%); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white; font-size: 2.5rem;">
-                ${service.icon}
-              </div>
-              <div>
-                <h2 style="font-size: 2.5rem; font-weight: 700; margin: 0; color: #1f2937;">${service.title}</h2>
-                <p style="font-size: 1.1rem; color: #6b7280; margin: 8px 0 0; line-height: 1.5;">${service.shortDesc}</p>
-              </div>
+            <div style="margin-bottom: 20px;">
+              <h2 style="font-size: 1.5rem; font-weight: 700; margin: 0; color: #1f2937;">${service.title}</h2>
+              <p style="font-size: 1.1rem; color: #6b7280; margin: 8px 0 0; line-height: 1.5;">${service.shortDesc}</p>
             </div>
           </div>
 
           <div class="service-modal-body" style="padding: 40px;">
             <div class="service-description" style="margin-bottom: 40px;">
-              <h3 style="font-size: 1.5rem; font-weight: 600; margin-bottom: 16px; color: #1f2937;">About This Service</h3>
+              <h3 style="font-size: 1.2rem; font-weight: 600; margin-bottom: 16px; color: #1f2937;">About This Service</h3>
               <p style="font-size: 1rem; line-height: 1.6; color: #4b5563;">${service.detailedDesc}</p>
             </div>
 
             <div class="service-features" style="margin-bottom: 40px;">
-              <h3 style="font-size: 1.5rem; font-weight: 600; margin-bottom: 20px; color: #1f2937;">What We Offer</h3>
+              <h3 style="font-size: 1.2rem; font-weight: 600; margin-bottom: 20px; color: #1f2937;">What We Offer</h3>
               <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 16px;">
                 ${service.features.map(feature => `
                   <div style="display: flex; align-items: flex-start; gap: 12px; padding: 16px; background: #f8fafc; border-radius: 8px;">
@@ -1025,7 +959,7 @@ class ServicesPage {
             </div>
 
             <div class="service-technologies" style="margin-bottom: 40px;">
-              <h3 style="font-size: 1.5rem; font-weight: 600; margin-bottom: 20px; color: #1f2937;">Technologies We Use</h3>
+              <h3 style="font-size: 1.2rem; font-weight: 600; margin-bottom: 20px; color: #1f2937;">Technologies We Use</h3>
               <div style="display: flex; flex-wrap: wrap; gap: 12px;">
                 ${service.technologies.map(tech => `
                   <span style="background: #e0f2fe; color: #0369a1; padding: 8px 16px; border-radius: 20px; font-size: 0.9rem; font-weight: 500;">${tech}</span>
@@ -1034,7 +968,7 @@ class ServicesPage {
             </div>
 
             <div class="service-process" style="margin-bottom: 40px;">
-              <h3 style="font-size: 1.5rem; font-weight: 600; margin-bottom: 20px; color: #1f2937;">Our Process</h3>
+              <h3 style="font-size: 1.2rem; font-weight: 600; margin-bottom: 20px; color: #1f2937;">Our Process</h3>
               <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 16px;">
                 ${service.process.map((step, index) => `
                   <div style="display: flex; align-items: flex-start; gap: 12px; padding: 16px; background: #f0f9ff; border-radius: 8px; border-left: 4px solid #0ea5e9;">

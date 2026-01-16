@@ -10,22 +10,11 @@ class ContactPage {
   }
 
   setupEventListeners() {
-    // Navigation toggle
-    const navToggle = document.getElementById('navToggle');
-    if (navToggle) {
-      navToggle.addEventListener('click', () => this.toggleNav());
-    }
-
     // Contact form
     const contactForm = document.getElementById('contactForm');
     if (contactForm) {
       contactForm.addEventListener('submit', (e) => this.handleContactSubmit(e));
     }
-  }
-
-  toggleNav() {
-    const nav = document.getElementById('mainNav');
-    if (nav) nav.classList.toggle('open');
   }
 
   // ============ Contact Form ============

@@ -1,0 +1,5 @@
+- [x] Add .features-grid CSS rules to css/layout.css with responsive grid columns
+- [x] Add responsive CSS for .contact-form (2 columns to 1 on mobile)
+- [x] Add responsive CSS for .hero-section, .mission-section, .platform-features, .cta-section
+- [x] Remove inline styles from contact.html for grid and other elements
+- [x] Test the layout on different screen sizes

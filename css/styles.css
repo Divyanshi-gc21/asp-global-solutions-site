@@ -120,10 +120,28 @@
   -webkit-backdrop-filter: blur(20px);
 }
 
+/* About Section */
+.about-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
+  align-items: center;
+}
+
 /* Responsive adjustments */
 @media (max-width: 768px) {
   .hero-bg-shapes .shape {
     display: none; /* Hide shapes on mobile for performance */
+  }
+
+  .about-content {
+    grid-template-columns: 1fr;
+  }
+  .about-text {
+    order: 1;
+  }
+  .about-image {
+    order: 2;
   }
 }
 
