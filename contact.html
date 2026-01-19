@@ -21,7 +21,7 @@
     <div class="container header-container">
       <a href="/" class="brand">
         <img src="/assets/logo.jpeg" alt="ASP Global Solutions Logo" id="logoImage" style="height: 40px; width: 40px; border-radius: 50%; object-fit: cover; margin-right: 15px; cursor: pointer; transition: transform 0.3s ease;">
-        <span>ASP Global Solutions</span>
+        <span style="margin-bottom: 10px; margin-top: 10px;">ASP Global Solutions</span>
       </a>
 
       <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
@@ -75,14 +75,16 @@
         <div class="feature-card" style="background: white; padding: 30px 30px; border-radius: 16px; box-shadow: 0 10px 30px rgba(0,0,0,0.1); text-align: center; transition: all 0.3s ease; border: 2px solid transparent;" onmouseover="this.style.border='2px solid transparent'; this.style.background='linear-gradient(white, white) padding-box, linear-gradient(135deg, #001122 0%, #003366 50%, #00ffff 100%) border-box'; this.style.transform='translateY(-5px)'; this.style.boxShadow='0 20px 40px rgba(0,0,0,0.15)';" onmouseout="this.style.border='2px solid transparent'; this.style.background='white'; this.style.transform='translateY(0)'; this.style.boxShadow='0 10px 30px rgba(0,0,0,0.1)';">
           <h3 style="font-size: 1.2rem; font-weight: 600; margin-bottom: 16px; color: #1f2937;">Email Support</h3>
           <p style="color: #6b7280; line-height: 1.6; margin-bottom: 20px;">Get in touch with our support team</p>
-          <a href="mailto:infoaspinnovations@gmail.com" style="color: #1f2937; text-decoration: none; font-weight: 500;">infoaspinnovations@gmail.com</a>
+         <i class="fas fa-envelope" style="font-size: 1rem; color: #001122; margin-bottom: 16px;"></i>
+          <a href="mailto:infoaspinnovations@gmail.com" style="color: #1f2937; text-decoration: none; font-weight: 500;"> infoaspinnovations@gmail.com</a>
         </div>
 
         <!-- Phone -->
         <div class="feature-card" style="background: white; padding: 30px 30px; border-radius: 16px; box-shadow: 0 10px 30px rgba(0,0,0,0.1); text-align: center; transition: all 0.3s ease; border: 2px solid transparent;" onmouseover="this.style.border='2px solid transparent'; this.style.background='linear-gradient(white, white) padding-box, linear-gradient(135deg, #001122 0%, #003366 50%, #00ffff 100%) border-box'; this.style.transform='translateY(-5px)'; this.style.boxShadow='0 20px 40px rgba(0,0,0,0.15)';" onmouseout="this.style.border='2px solid transparent'; this.style.background='white'; this.style.transform='translateY(0)'; this.style.boxShadow='0 10px 30px rgba(0,0,0,0.1)';">
           <h3 style="font-size: 1.2rem; font-weight: 600; margin-bottom: 16px; color: #1f2937;">Phone Support</h3>
           <p style="color: #6b7280; line-height: 1.6; margin-bottom: 20px;">Speak directly with our team</p>
-          <a href="tel:+1234567890" style="color: #1f2937; text-decoration: none; font-weight: 500;">+1 (234) 567-890</a>
+           <i class="fas fa-phone" style="font-size: 1rem; color: #001122; margin-bottom: 16px;"></i>
+          <a href="tel:+1234567890" style="color: #1f2937; text-decoration: none; font-weight: 500;"> +918707491302</a>
         </div>
 
         <!-- Address -->
@@ -90,9 +92,14 @@
           <h3 style="font-size: 1.2rem; font-weight: 600; margin-bottom: 16px; color: #1f2937;">Office Address</h3>
           <p style="color: #6b7280; line-height: 1.6; margin-bottom: 20px;">Visit our headquarters</p>
           <address style="color: #1f2937; font-style: normal; line-height: 1.5;">
-            123 K Block<br>
-            Govind Nagar<br>
+           <i class="fas fa-map-marker-alt" style="font-size: 1rem; color: #001122; margin-bottom: 16px;"></i>
+            123 K Block,Govind Nagar<br>
             Kanpur, UP 208006<br>
+          </address><br>
+          <address style="color: #1f2937; font-style: normal; line-height: 1.5;">
+            <i class="fas fa-map-marker-alt" style="font-size: 1rem; color: #001122; margin-bottom: 16px;"></i>
+            1000 4Th, office #410<br>
+            San Rafael, CA 94901, USA
           </address>
         </div>
 
@@ -101,8 +108,8 @@
           <h3 style="font-size: 1.2rem; font-weight: 600; margin-bottom: 16px; color: #1f2937;">Business Hours</h3>
           <p style="color: #6b7280; line-height: 1.6; margin-bottom: 20px;">We're here when you need us</p>
           <div class="hours" style="color: #1f2937; line-height: 1.5;">
-            <div>Morning Shift: 10:00 AM - 7:00 PM</div>
-            <div>Night Shift: 8:00 PM - 4:00 AM</div>
+            <div><i class="fas fa-clock" style="font-size: 1rem; color: #001122; margin-bottom: 16px;"></i> Morning Shift: 10:00 AM - 7:00 PM</div>
+            <div><i class="fas fa-clock" style="font-size: 1rem; color: #001122; margin-bottom: 16px;"></i> Night Shift: 8:00 PM - 4:00 AM</div>
           </div>
         </div>
       </div>
@@ -165,18 +172,18 @@
   <footer class="site-footer">
     <div class="container footer-container">
       <div class="footer-content" style="text-align: center; margin-bottom: 0px;">
-        <div class="footer-section"><br>
-          <h4 style="font-size: 0.8rem; font-weight: 600; margin-bottom: 16px; color: #1f2937;">Contact Info</h4>
+        <div class="footer-section">
+          <h4 style="font-size: 0.8rem; font-weight: 600; margin-bottom: 10px; color: #1f2937;">Contact Info</h4>
           <div style="color: #64748b; line-height: 1.6;">
-            <p style="margin-bottom: 8px;"><i class="fas fa-envelope" style="margin-right: 8px;"></i> infoaspinnovations@gmail.com</p>
-            <p style="margin-bottom: 8px;"><i class="fas fa-phone" style="margin-right: 8px;"></i> +1 (786) 253-3265</p>
-            <p style="margin-bottom: 8px;"><i class="fas fa-map-marker-alt" style="margin-right: 8px;"></i> K Block, Govind Nagar, Kanpur, UP 208006</p>
-            <p style="margin-bottom: 8px;"><i class="fas fa-map-marker-alt" style="margin-right: 8px;"></i> 1000 4Th, office #410, San Rafael, CA 94901, USA</p>
+            <p style="margin-bottom: 1px;"><i class="fas fa-envelope" style="margin-right: 8px;"></i> infoaspinnovations@gmail.com</p>
+            <p style="margin-bottom: 1px;"><i class="fas fa-phone" style="margin-right: 8px;"></i> +918707491302</p>
+            <p style="margin-bottom: 1px;"><i class="fas fa-map-marker-alt" style="margin-right: 8px;"></i> K Block, Govind Nagar, Kanpur, UP 208006</p>
+            <p style="margin-bottom: 1px;"><i class="fas fa-map-marker-alt" style="margin-right: 8px;"></i> 1000 4Th, office #410, San Rafael, CA 94901, USA</p>
           </div>
         </div>
       </div>
 
-      <div class="footer-bottom" style="border-top: 1px solid #e5e7eb; padding-top: 10px; margin-bottom: -10px; text-align: center;">
+      <div class="footer-bottom" style="border-top: 1px solid #e5e7eb; padding-top: 5px; margin-bottom: -20px; text-align: center;">
         <p>&copy; <span id="year"></span> ASP Global Solutions. All rights reserved.</p>
         <p style="color: #64748b; font-size: 0.8rem;">Connecting people, sharing stories, and building the future together.</p>
       </div>
@@ -189,7 +196,7 @@
   <script src="/js/pages/common.js"></script>
   <script src="/js/pages/contact-page.js"></script>
 
-   <a href="https://wa.me/918707491302" target="_blank" class="whatsapp-float">
+   <a href="https://wa.me/+17862533265" target="_blank" class="whatsapp-float">
   <i class="fab fa-whatsapp"></i>
   </a>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
