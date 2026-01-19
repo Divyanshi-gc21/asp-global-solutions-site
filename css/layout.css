@@ -698,6 +698,176 @@ body {
   .footer-bottom {
     text-align: center;
   }
+
+  /* Home page footer responsive */
+  .footer-content {
+    margin-left: 0;
+    margin-right: 0;
+    gap: 20px;
+  }
+}
+
+/* Additional responsive overrides for inline styles */
+@media (max-width: 768px) {
+  /* Hero section responsive */
+  .hero-section {
+    padding: 60px 0 80px !important;
+  }
+
+  .hero-section h1 {
+    font-size: 2.5rem !important;
+    margin-bottom: 20px !important;
+    margin-top: -30px !important;
+  }
+
+  .hero-section h5 {
+    font-size: clamp(1.2rem, 3vw, 2rem) !important;
+    margin-bottom: 24px !important;
+  }
+
+  .hero-section p {
+    font-size: 0.9rem !important;
+    margin-bottom: 32px !important;
+    max-width: 90% !important;
+  }
+
+  .hero-stats {
+    flex-direction: column !important;
+    gap: 15px !important;
+  }
+
+  .stat-item {
+    text-align: center !important;
+  }
+
+  /* Services section responsive */
+  .services-grid {
+    grid-template-columns: 1fr !important;
+    gap: 30px !important;
+  }
+
+  .service-card {
+    padding: 16px 12px !important;
+    min-height: auto !important;
+  }
+
+  .service-card h3 {
+    font-size: 1rem !important;
+    margin-bottom: 12px !important;
+  }
+
+  /* About section responsive */
+  .about-content {
+    flex-direction: column !important;
+  }
+
+  .about-text, .about-image {
+    width: 100% !important;
+  }
+
+  .about-stats {
+    grid-template-columns: 1fr !important;
+    gap: 16px !important;
+  }
+
+  /* CTA section responsive */
+  .cta-section {
+    padding: 40px 20px !important;
+    margin: 0 auto !important;
+  }
+
+  .cta-section h2 {
+    font-size: 1.2rem !important;
+    margin-bottom: 16px !important;
+  }
+
+  .cta-section p {
+    font-size: 0.8rem !important;
+    margin-bottom: 30px !important;
+  }
+
+  .cta-buttons {
+    flex-direction: column !important;
+    gap: 15px !important;
+  }
+
+  .cta-buttons .btn {
+    padding: 14px 20px !important;
+    font-size: 13px !important;
+  }
+
+  /* Contact form responsive */
+  .contact-form {
+    grid-template-columns: 1fr !important;
+    gap: 20px !important;
+  }
+
+  .contact-form .form-group textarea {
+    min-height: 100px !important;
+  }
+
+  /* Footer responsive */
+  .footer-content {
+    grid-template-columns: 1fr !important;
+    gap: 30px !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+  }
+
+  .footer-section h4 {
+    font-size: 0.9rem !important;
+  }
+
+  .footer-section ul {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+  }
+
+  /* Services page footer specific */
+  .footer-section:nth-child(2) div {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    grid-template-columns: 1fr !important;
+  }
+
+  /* Services page specific */
+  .platform-features h2 {
+    font-size: 1.3rem !important;
+  }
+
+  .features-cards {
+    max-width: 100% !important;
+  }
+
+  .feature-item-card {
+    padding: 30px 20px !important;
+  }
+
+  /* Mission section responsive */
+  .mission-section {
+    padding: 40px 0 !important;
+  }
+
+  .mission-section h2 {
+    font-size: 1.3rem !important;
+    margin-bottom: 16px !important;
+  }
+
+  .mission-section p {
+    font-size: 0.9rem !important;
+  }
+
+  /* Features cards responsive */
+  .features-cards {
+    grid-template-columns: 1fr !important;
+    gap: 20px !important;
+  }
+
+  /* Auth modal responsive */
+  .auth-panel {
+    padding: var(--spacing-xl) !important;
+    max-width: 90% !important;
+  }
 }
 
 @media (max-width: 480px) {
